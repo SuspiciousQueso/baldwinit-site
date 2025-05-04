@@ -5,28 +5,64 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>BaldwinIT – Reliable Remote IT Support</title>
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+    * {
+      box-sizing: border-box;
+    }
     body {
-      font-family: system-ui, sans-serif;
+      font-family: 'Inter', sans-serif;
       margin: 0;
       padding: 0;
       background-color: #f5f7fa;
       color: #1f2937;
+      scroll-behavior: smooth;
     }
-    header, footer {
+    header {
       background-color: #1e293b;
       color: white;
-      padding: 1.5rem;
+      padding: 4rem 2rem;
       text-align: center;
+      background-image: linear-gradient(120deg, #1e293b, #3b82f6);
+    }
+    header h1 {
+      font-size: 2.75rem;
+      margin-bottom: 0.5rem;
+    }
+    header p {
+      font-size: 1.25rem;
+      margin: 0 auto;
+      max-width: 600px;
+    }
+    .hero-cta {
+      margin-top: 2rem;
+      background-color: #3b82f6;
+      padding: 0.8rem 1.5rem;
+      border-radius: 8px;
+      color: white;
+      text-decoration: none;
+      display: inline-block;
+      font-weight: 600;
+      transition: background 0.3s;
+    }
+    .hero-cta:hover {
+      background-color: #2563eb;
     }
     .container {
       max-width: 800px;
-      margin: 2rem auto;
+      margin: 3rem auto;
       padding: 1rem;
       background: white;
-      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      border-radius: 12px;
+      animation: fadeIn 1s ease-in;
     }
-    h1, h2 {
-      color: #1f2937;
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    h2 {
+      margin-top: 2rem;
+      font-size: 1.5rem;
     }
     ul {
       list-style: none;
@@ -43,6 +79,7 @@
       padding: 0.75rem 1.25rem;
       text-decoration: none;
       border-radius: 6px;
+      font-weight: 600;
     }
     .cta:hover {
       background-color: #38bdf8;
@@ -62,48 +99,36 @@
       color: white;
       border: none;
       cursor: pointer;
+      border-radius: 6px;
     }
     form button:hover {
       background-color: #3b82f6;
     }
     .logo {
-      max-width: 120px;
+      max-width: 100px;
       margin-bottom: 1rem;
     }
-    .download-link {
-      margin-top: 2rem;
-      text-align: center;
-    }
-    .download-link a {
-      background-color: #3b82f6;
-      color: white;
-      padding: 0.75rem 1.5rem;
-      border-radius: 8px;
-      text-decoration: none;
-      display: inline-block;
-    }
-    .download-link a:hover {
-      background-color: #2563eb;
-    }
-    .external-links {
+    .download-link, .external-links {
       margin-top: 3rem;
       text-align: center;
     }
-    .external-links a {
-      margin: 0 1rem;
+    .download-link a, .external-links a {
+      background-color: #3b82f6;
+      color: white;
+      padding: 0.75rem 1.25rem;
+      border-radius: 6px;
       text-decoration: none;
-      color: #2563eb;
+      display: inline-block;
+      margin: 0.5rem;
     }
-    .external-links a:hover {
-      text-decoration: underline;
+    .download-link a:hover, .external-links a:hover {
+      background-color: #2563eb;
     }
-    .banner {
-      background-color: #7dd3fc;
-      color: #1e1e1e;
-      text-align: center;
+    footer {
+      background-color: #1e293b;
+      color: white;
       padding: 1rem;
-      font-weight: bold;
-      font-size: 1.1rem;
+      text-align: center;
     }
   </style>
 </head>
@@ -111,21 +136,18 @@
   <header>
     <img src="BaldwinIT1_files/logo.png" alt="BaldwinIT Logo" class="logo">
     <h1>BaldwinIT</h1>
-    <p>Reliable Remote IT Support, When You Need It.</p>
+    <p>Let’s fix your tech headaches. Fast, friendly, remote support for individuals and small businesses.</p>
+    <a href="#contact" class="hero-cta">Book a Free Consultation</a>
   </header>
-
-  <section class="banner">
-    <p>📢 Now accepting new clients for remote support and automation help!</p>
-  </section>
 
   <div class="container">
     <section>
       <h2>What I Do</h2>
       <ul>
-        <li><strong>Remote Support:</strong> Troubleshooting, cleanups, config fixes</li>
-        <li><strong>Email & DNS:</strong> Outlook issues, domain & MX record fixes</li>
-        <li><strong>Backup & Sync:</strong> Cloud sync, Synology, Google Drive</li>
-        <li><strong>Script Automation:</strong> PowerShell and Bash that saves you time</li>
+        <li><strong>🧰 Remote Support:</strong> Troubleshooting, cleanups, config fixes</li>
+        <li><strong>📧 Email & DNS:</strong> Outlook issues, domain & MX record fixes</li>
+        <li><strong>☁️ Backup & Sync:</strong> Cloud sync, Synology, Google Drive</li>
+        <li><strong>💻 Script Automation:</strong> PowerShell and Bash that saves you time</li>
       </ul>
       <a class="cta" href="#contact">Get In Touch</a>
     </section>
