@@ -33,102 +33,68 @@
       margin: 0 auto;
       max-width: 600px;
     }
-    .hero-cta {
-      margin-top: 2rem;
-      background-color: #3b82f6;
-      padding: 0.8rem 1.5rem;
-      border-radius: 8px;
-      color: white;
-      text-decoration: none;
-      display: inline-block;
-      font-weight: 600;
-      transition: background 0.3s;
-    }
-    .hero-cta:hover {
-      background-color: #2563eb;
-    }
-    .container {
-      max-width: 960px;
-      margin: 3rem auto;
-      padding: 1rem;
-      background: white;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-      border-radius: 12px;
-      animation: fadeIn 1s ease-in;
-    }
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(10px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-    h2 {
-      margin-top: 2rem;
-      font-size: 1.5rem;
-    }
-    ul {
-      list-style: none;
-      padding-left: 0;
-    }
-    ul li {
-      padding: 0.5rem 0;
-    }
-    form {
-      display: flex;
-      flex-direction: column;
-    }
-    form input, form textarea, form button {
-      margin-top: 0.5rem;
-      padding: 0.75rem;
-      font-size: 1rem;
-    }
-    form button {
-      background-color: #60a5fa;
-      color: white;
-      border: none;
-      cursor: pointer;
-      border-radius: 6px;
-    }
-    form button:hover {
-      background-color: #3b82f6;
-    }
     .logo {
       max-width: 100px;
       margin-bottom: 1rem;
     }
-    .download-link, .external-links {
-      margin-top: 3rem;
-      text-align: center;
+    .main-grid {
+      display: grid;
+      grid-template-columns: 1fr 2fr 1fr;
+      gap: 2rem;
+      max-width: 1200px;
+      margin: 3rem auto;
+      padding: 1rem;
     }
-    .download-link a, .external-links a {
+    .main-grid > .column {
+      background: white;
+      padding: 1rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+    .column h2 {
+      font-size: 1.5rem;
+      margin-top: 0;
+    }
+    .column ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    .column ul li {
+      padding: 0.5rem 0;
+    }
+    .external-links a {
       background-color: #3b82f6;
       color: white;
-      padding: 0.75rem 1.25rem;
+      padding: 0.5rem 1rem;
       border-radius: 6px;
       text-decoration: none;
       display: inline-block;
-      margin: 0.5rem;
+      margin: 0.5rem 0.25rem;
     }
-    .download-link a:hover, .external-links a:hover {
+    .external-links a:hover {
       background-color: #2563eb;
     }
-    .about-section {
+    .download-link {
+      margin-top: 2rem;
       text-align: center;
-      padding: 2rem 1rem;
     }
-    .flexbox {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 2rem;
-      justify-content: space-between;
+    .download-link a {
+      background-color: #3b82f6;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border-radius: 8px;
+      text-decoration: none;
+      display: inline-block;
     }
-    .flexbox > section {
-      flex: 1;
-      min-width: 300px;
+    .download-link a:hover {
+      background-color: #2563eb;
     }
     footer {
       background-color: #1e293b;
       color: white;
       padding: 1rem;
       text-align: center;
+      margin-top: 4rem;
     }
   </style>
 </head>
@@ -139,39 +105,37 @@
     <p>Let’s fix your tech headaches. Fast, friendly, remote support for individuals and small businesses.</p>
   </header>
 
-  <div class="container">
-    <section class="about-section">
+  <div class="main-grid">
+    <div class="column"></div>
+
+    <div class="column">
       <h2>About Me</h2>
       <p>I’m Billy, a seasoned IT professional with over 20 years of experience helping users get unstuck with everything from day-to-day PC frustrations to advanced systems support. I’ve worked with cloud, networks, automation, and real-world end users who just need things to work without excuses.</p>
       <p>This site is a hub for quick help, scheduled support, and sharing useful tips I've picked up along the way. I believe in remote-first service that respects your time and solves the issue without fluff. If you need help, reach out — no problem too small.</p>
-    </section>
 
-    <div class="flexbox">
-      <section>
-        <h2>Connect with Me</h2>
-        <div class="external-links">
-          <a href="https://linkedin.com/in/billy-ray-b-9b5346304/" target="_blank">LinkedIn</a>
-          <a href="https://github.com/SuspiciousQueso" target="_blank">GitHub</a>
-          <a href="BaldwinIT1_files/resume.pdf" target="_blank">My Resume</a>
-        </div>
-      </section>
+      <h2 style="margin-top:2rem;">What I Do</h2>
+      <ul>
+        <li><strong>🧰 Remote Support:</strong> Troubleshooting, cleanups, config fixes</li>
+        <li><strong>📧 Email & DNS:</strong> Outlook issues, domain & MX record fixes</li>
+        <li><strong>☁️ Backup & Sync:</strong> Cloud sync, Synology, Google Drive</li>
+        <li><strong>💻 Script Automation:</strong> PowerShell and Bash that saves you time</li>
+      </ul>
 
-      <section>
-        <h2>What I Do</h2>
-        <ul>
-          <li><strong>🧰 Remote Support:</strong> Troubleshooting, cleanups, config fixes</li>
-          <li><strong>📧 Email & DNS:</strong> Outlook issues, domain & MX record fixes</li>
-          <li><strong>☁️ Backup & Sync:</strong> Cloud sync, Synology, Google Drive</li>
-          <li><strong>💻 Script Automation:</strong> PowerShell and Bash that saves you time</li>
-        </ul>
-      </section>
+      <div class="download-link">
+        <h2>Need Remote Support?</h2>
+        <p>Download RustDesk to get connected quickly and securely:</p>
+        <a href="https://rustdesk.com">Download RustDesk</a>
+      </div>
     </div>
 
-    <section class="download-link">
-      <h2>Need Remote Support?</h2>
-      <p>Download RustDesk to get connected quickly and securely:</p>
-      <a href="https://rustdesk.com">Download RustDesk</a>
-    </section>
+    <div class="column">
+      <h2>Connect with Me</h2>
+      <div class="external-links">
+        <a href="https://linkedin.com/in/billy-ray-b-9b5346304/" target="_blank">LinkedIn</a>
+        <a href="https://github.com/SuspiciousQueso" target="_blank">GitHub</a>
+        <a href="BaldwinIT1_files/resume.pdf" target="_blank">My Resume</a>
+      </div>
+    </div>
   </div>
 
   <footer>
