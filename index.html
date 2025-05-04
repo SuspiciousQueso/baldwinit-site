@@ -48,7 +48,7 @@
       background-color: #2563eb;
     }
     .container {
-      max-width: 800px;
+      max-width: 960px;
       margin: 3rem auto;
       padding: 1rem;
       background: white;
@@ -70,20 +70,6 @@
     }
     ul li {
       padding: 0.5rem 0;
-    }
-    .cta {
-      display: inline-block;
-      margin-top: 1rem;
-      background-color: #7dd3fc;
-      color: #1f2937;
-      padding: 0.75rem 1.25rem;
-      text-decoration: none;
-      border-radius: 6px;
-      font-weight: 600;
-    }
-    .cta:hover {
-      background-color: #38bdf8;
-      color: white;
     }
     form {
       display: flex;
@@ -124,6 +110,20 @@
     .download-link a:hover, .external-links a:hover {
       background-color: #2563eb;
     }
+    .about-section {
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+    .flexbox {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: space-between;
+    }
+    .flexbox > section {
+      flex: 1;
+      min-width: 300px;
+    }
     footer {
       background-color: #1e293b;
       color: white;
@@ -137,47 +137,40 @@
     <img src="BaldwinIT1_files/logo.png" alt="BaldwinIT Logo" class="logo">
     <h1>BaldwinIT</h1>
     <p>Let’s fix your tech headaches. Fast, friendly, remote support for individuals and small businesses.</p>
-    <a href="#contact" class="hero-cta">Book a Free Consultation</a>
   </header>
 
   <div class="container">
-    <section>
-      <h2>What I Do</h2>
-      <ul>
-        <li><strong>🧰 Remote Support:</strong> Troubleshooting, cleanups, config fixes</li>
-        <li><strong>📧 Email & DNS:</strong> Outlook issues, domain & MX record fixes</li>
-        <li><strong>☁️ Backup & Sync:</strong> Cloud sync, Synology, Google Drive</li>
-        <li><strong>💻 Script Automation:</strong> PowerShell and Bash that saves you time</li>
-      </ul>
-      <a class="cta" href="#contact">Get In Touch</a>
-    </section>
-
-    <section>
+    <section class="about-section">
       <h2>About Me</h2>
-      <p>I’m Billy, a seasoned IT professional with over 20 years of experience. Whether you're dealing with weird email errors, slow systems, or just want a smooth backup solution — I’ll get you squared away without the jargon or fluff.</p>
+      <p>I’m Billy, a seasoned IT professional with over 20 years of experience helping users get unstuck with everything from day-to-day PC frustrations to advanced systems support. I’ve worked with cloud, networks, automation, and real-world end users who just need things to work without excuses.</p>
+      <p>This site is a hub for quick help, scheduled support, and sharing useful tips I've picked up along the way. I believe in remote-first service that respects your time and solves the issue without fluff. If you need help, reach out — no problem too small.</p>
     </section>
 
-    <section id="contact">
-      <h2>Contact</h2>
-      <form>
-        <input type="text" placeholder="Your Name" required>
-        <input type="email" placeholder="Your Email" required>
-        <textarea rows="4" placeholder="What do you need help with?" required></textarea>
-        <button type="submit">Send</button>
-      </form>
-    </section>
+    <div class="flexbox">
+      <section>
+        <h2>Connect with Me</h2>
+        <div class="external-links">
+          <a href="https://linkedin.com/in/billy-ray-b-9b5346304/" target="_blank">LinkedIn</a>
+          <a href="https://github.com/SuspiciousQueso" target="_blank">GitHub</a>
+          <a href="BaldwinIT1_files/resume.pdf" target="_blank">My Resume</a>
+        </div>
+      </section>
+
+      <section>
+        <h2>What I Do</h2>
+        <ul>
+          <li><strong>🧰 Remote Support:</strong> Troubleshooting, cleanups, config fixes</li>
+          <li><strong>📧 Email & DNS:</strong> Outlook issues, domain & MX record fixes</li>
+          <li><strong>☁️ Backup & Sync:</strong> Cloud sync, Synology, Google Drive</li>
+          <li><strong>💻 Script Automation:</strong> PowerShell and Bash that saves you time</li>
+        </ul>
+      </section>
+    </div>
 
     <section class="download-link">
       <h2>Need Remote Support?</h2>
       <p>Download RustDesk to get connected quickly and securely:</p>
       <a href="https://rustdesk.com">Download RustDesk</a>
-    </section>
-
-    <section class="external-links">
-      <h2>Connect with Me</h2>
-      <a href="https://linkedin.com/in/billy-ray-b-9b5346304/" target="_blank">LinkedIn</a>
-      <a href="https://github.com/SuspiciousQueso" target="_blank">GitHub</a>
-      <a href="BaldwinIT1_files/resume.pdf" target="_blank">My Resume</a>
     </section>
   </div>
 
