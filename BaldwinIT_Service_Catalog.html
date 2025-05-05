@@ -4,17 +4,86 @@
 <head>
     <meta charset="UTF-8">
     <title>BaldwinIT Service Catalog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        body { font-family: Arial, sans-serif; margin: 2em; line-height: 1.6; }
-        h1, h2 { color: #333; }
-        table { width: 100%; border-collapse: collapse; margin-bottom: 2em; }
-        th, td { border: 1px solid #ccc; padding: 8px; text-align: left; }
-        th { background-color: #f2f2f2; }
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+        * {
+          box-sizing: border-box;
+        }
+        body {
+          font-family: 'Inter', sans-serif;
+          margin: 0;
+          padding: 0;
+          background-color: #f5f7fa;
+          color: #1f2937;
+          scroll-behavior: smooth;
+        }
+        header {
+          background-color: #1e293b;
+          color: white;
+          padding: 2.5rem 1.5rem;
+          text-align: center;
+          background-image: linear-gradient(120deg, #1e293b, #3b82f6);
+        }
+        .logo-header {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 1rem;
+          margin-bottom: 1rem;
+          flex-wrap: wrap;
+        }
+        .logo-header h1 {
+          font-size: 2.25rem;
+          margin: 0;
+        }
+        main {
+          max-width: 1000px;
+          margin: 2rem auto;
+          padding: 1rem;
+          background: white;
+          border-radius: 12px;
+          box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+        }
+        h2 {
+          color: #1f2937;
+          border-bottom: 2px solid #3b82f6;
+          padding-bottom: 0.25rem;
+        }
+        table {
+          width: 100%;
+          border-collapse: collapse;
+          margin: 1rem 0;
+        }
+        th, td {
+          border: 1px solid #ccc;
+          padding: 10px;
+          text-align: left;
+        }
+        th {
+          background-color: #e2e8f0;
+        }
+        ul {
+          margin-top: 0.5rem;
+        }
+        footer {
+          background-color: #1e293b;
+          color: white;
+          padding: 1rem;
+          text-align: center;
+          margin-top: 4rem;
+        }
     </style>
 </head>
 <body>
-    <h1>BaldwinIT Service Catalog</h1>
+  <header>
+    <div class="logo-header">
+      <h1>BaldwinIT</h1>
+    </div>
+    <p>Service Catalog – Pricing & Plans</p>
+  </header>
 
+  <main>
     <h2>Hourly Services</h2>
     <p>Ideal for one-time fixes, consultations, or hourly tech support.</p>
     <table>
@@ -49,5 +118,10 @@
         <li>Weekend/Holiday work: +$25/hr</li>
         <li>Onboarding + documentation setup: $75 flat</li>
     </ul>
+  </main>
+
+  <footer>
+    &copy; 2025 BaldwinIT — All rights reserved.
+  </footer>
 </body>
 </html>
